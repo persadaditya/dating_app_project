@@ -1,0 +1,68 @@
+name: luvit_dating_app
+description: hyperhire dating app
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: '2.8.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.4 #https://pub.dev/packages/cupertino_icons
+  get: ^4.5.1 #https://pub.dev/packages/get
+  flutter_svg: ^2.0.7 #https://pub.dev/packages/flutter_svg
+  dio: ^5.3.2 #https://pub.dev/packages/dio
+  shared_preferences: ^2.0.10 #https://pub.dev/packages/shared_preferences
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0 #https://pub.dev/packages/intl
+  cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image
+  animations: ^2.0.2 #https://pub.dev/packages/animations
+  logger: ^2.0.2 #https://pub.dev/packages/logger
+  pretty_dio_logger: ^1.1.1 #https://pub.dev/packages/pretty_dio_logger
+  font_awesome_flutter: ^10.5.0 #https://pub.dev/packages/font_awesome_flutter
+  fluttertoast: ^8.0.8 #https://pub.dev/packages/fluttertoast
+  fvm: ^2.4.1 #https://pub.dev/packages/fvm
+  file: ^6.1.4 #https://pub.dev/packages/file
+  nb_utils: ^6.0.3 #https://pub.dev/packages/nb_utils
+  firebase_core: ^2.15.1 #https://pub.dev/packages/firebase_core
+  firebase_database: ^10.2.5 #https://pub.dev/packages/firebase_database
+  flutter_native_splash: ^2.3.2 #https://pub.dev/packages/flutter_native_splash
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  analyzer: any
+  dart_code_metrics: any
+  change_app_package_name: ^1.1.0 #https://pub.dev/packages/change_app_package_name
+  flutter_launcher_icons: ^0.12.0 #https://pub.dev/packages/flutter_launcher_icons
+
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "images/launcher_icon.png"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - images/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Thin.ttf
+          weight: 200
+        - asset: fonts/Roboto-Light.ttf
+          weight: 200
+        - asset: fonts/Roboto-Regular.ttf
+          weight: 200
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 300
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 600
+        - asset: fonts/Roboto-Italic.ttf
+          style: italic

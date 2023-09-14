@@ -1,0 +1,15 @@
+{
+  "home": "Home",
+  "spot": "Spot",
+  "chatting": "Chatting",
+  "me": "Me",
+  "whatsNew": "'s new",
+  "yourLocation": "Location",
+  "titleOtherView": "OtherView",
+  "settingsTheme": "Theme",
+  "settingsLanguage": "Language",
+  "settingsFontSize": "Font Size",
+  "preparingTitle": "I'm preparing friends to recommend.",
+  "preparingDescription": "We introduce you to new friends every day",
+  "workingProgress": "Working Progress"
+}
