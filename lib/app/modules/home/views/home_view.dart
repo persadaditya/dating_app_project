@@ -70,10 +70,10 @@ class HomeView extends BaseView<HomeController> {
               )),
             ),
             onDragUpdate: (details){
-              controller.onDragUpdate(details);
+              controller.onSwipeUpdateIcon(details);
             },
             onDragEnd: (details){
-              controller.onDragEnd(details, userDating);
+              controller.onRemoveCard(details, userDating);
             },
             childWhenDragging: Container(),
             child: ItemCardDating(item: userDating,

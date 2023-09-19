@@ -38,9 +38,14 @@ class HomeController extends BaseController {
         userDating = response as List<UserDating>;
       }
     );
+
+    repository.getStreamUserDating().listen((event) {
+      logger.d('changed: ${event.toString()}');
+      userDating = event;
+    });
   }
 
-  onDragUpdate(DragUpdateDetails details){
+  onSwipeUpdateIcon(DragUpdateDetails details){
     var offset = dragUpdate;
     var setX = offset.dx + details.delta.dx;
     var setY = offset.dy + details.delta.dy;
@@ -48,7 +53,7 @@ class HomeController extends BaseController {
     showDelete = setX < 0 && setY > 0;
   }
 
-  onDragEnd(DraggableDetails details, UserDating user){
+  onRemoveCard(DraggableDetails details, UserDating user){
     dragUpdate = const Offset(0, 0);
     showDelete = false;
     if(details.offset.dx < 0 && details.offset.dy > 0){

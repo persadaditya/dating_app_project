@@ -213,9 +213,10 @@ class _ItemCardDatingState extends State<ItemCardDating> {
   Widget titleAge(){
     return Row(
       children: [
-        Text(widget.item.name ?? '', style: whiteText32.copyWith(fontWeight: FontWeight.w600),),
+        Text(widget.item.name ?? '', style: whiteText32.copyWith(fontWeight: FontWeight.w600),overflow: TextOverflow.ellipsis,).expand(),
         AppValues.smallPadding.toInt().width,
-        Text('${widget.item.age}', style: whiteText32,)
+        Text('${widget.item.age}', style: whiteText32,),
+        AppValues.halfPadding.toInt().width,
       ],
     );
   }
